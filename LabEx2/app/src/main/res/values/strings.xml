@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LabEx2</string>
+    <string name="logo_description">App logo</string>
+    <string name="initial_value">0</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="reset">Reset</string>
+    <string name="step">Step</string>
+</resources>

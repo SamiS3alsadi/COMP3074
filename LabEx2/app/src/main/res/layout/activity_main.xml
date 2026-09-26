@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+
+        <!-- 1. Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/logo_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 2. Output label -->
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/initial_value"
+            android:textColor="@color/text_primary"
+            android:textSize="48sp"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 4. Subtract -->
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/subtract"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/btn_green"
+            app:layout_constraintTop_toBottomOf="@id/tvOutput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnAdd" />
+
+        <!-- 3. Add -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/btn_green"
+            app:layout_constraintTop_toTopOf="@id/btnSubtract"
+            app:layout_constraintStart_toEndOf="@id/btnSubtract"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 5. Reset -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_reset"
+            app:layout_constraintTop_toBottomOf="@id/btnSubtract"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnStep" />
+
+        <!-- 6. Step -->
+        <Button
+            android:id="@+id/btnStep"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/step"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_step"
+            app:layout_constraintTop_toTopOf="@id/btnReset"
+            app:layout_constraintStart_toEndOf="@id/btnReset"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
