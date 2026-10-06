@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+    <string name="about_title">About</string>
+
+    <string name="hours_label">Number of hours worked</string>
+    <string name="rate_label">Hourly rate</string>
+    <string name="tax_rate_label">Tax rate (e.g. 0.2 for 20%)</string>
+    <string name="calculate">Calculate</string>
+
+    <string name="pay_label">Pay</string>
+    <string name="overtime_label">Overtime pay</string>
+    <string name="total_label">Total pay</string>
+    <string name="tax_label">Tax</string>
+
+    <string name="results_title">Results</string>
+    <string name="placeholder">—</string>
+    <string name="money">$%.2f</string>
+    <string name="error_invalid">Enter a number of 0 or more</string>
+
+    <string name="student_name">Sami Al-Sadi</string>
+    <string name="student_id">101571952</string>
+    <string name="name_heading">Name</string>
+    <string name="id_heading">Student ID</string>
+</resources>
